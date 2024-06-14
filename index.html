@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish Login Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="mainlogin-section">
+        <div class="container right-panel-active">
+            <!-- Sign Up -->
+            <div class="container__form container--signup">
+                <form action="#" class="form" id="form1">
+                    <h2 class="form__title"><i class="fa fa-user-plus" aria-hidden="true"></i></h2>
+                    <input type="text" placeholder="User" class="input" />
+                    <input type="email" placeholder="Email" class="input" />
+                    <input type="password" placeholder="Password" class="input" />
+                    <button class="btn">Sign Up</button>
+                </form>
+            </div>
+        
+            <!-- Sign In -->
+            <div class="container__form container--signin">
+                <form action="#" class="form" id="form2"  onsubmit="return validateForm()">
+                    <h2 class="form__title"><i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                    </h2>
+                    <input type="email" placeholder="Email" class="input" / id="enterEmail">
+                    <span class="error-message" id="usernameError"></span>
+                    <input type="password" placeholder="Password" class="input" id="enterPassword" />
+                    <span class="error-message" id="passwordError"></span>
+                    <a href="#" class="link">Forgot your password?</a>
+                    <button class="btn">Sign In</button>
+                </form>
+            </div>
+        
+            <!-- Overlay -->
+            <div class="container__overlay">
+                <div class="overlay">
+                    <div class="overlay__panel overlay--left">
+                        <button class="btn" id="signIn">Sign In</button>
+                    </div>
+                    <div class="overlay__panel overlay--right">
+                        <button class="btn" id="signUp">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="assets/js/index.js" defer></script>
+</body>
+</html>
+

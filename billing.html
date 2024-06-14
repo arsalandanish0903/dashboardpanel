@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billings</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="dashboard">
+        <div class="main-container">
+            <div class="header">
+                <div class="header-logo">
+                    <svg class="site-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path
+                            d="M512 256a15 15 0 00-7.1-12.8l-52-32 52-32.5a15 15 0 000-25.4L264 2.3c-4.8-3-11-3-15.9 0L7 153.3a15 15 0 000 25.4L58.9 211 7.1 243.3a15 15 0 000 25.4L58.8 301 7.1 333.3a15 15 0 000 25.4l241 151a15 15 0 0015.9 0l241-151a15 15 0 00-.1-25.5l-52-32 52-32.5A15 15 0 00512 256zM43.3 166L256 32.7 468.7 166 256 298.3 43.3 166zM468.6 346L256 479.3 43.3 346l43.9-27.4L248 418.7a15 15 0 0015.8 0L424.4 319l44.2 27.2zM256 388.3L43.3 256l43.9-27.4L248 328.7a15 15 0 0015.8 0L424.4 229l44.1 27.2L256 388.3z" />
+                    </svg>
+                    <span class="site-title">Layerz</span>
+                </div>
+                <div class="header-search">
+                    <button class="button-menu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 385 385">
+                            <path
+                                d="M12 120.3h361a12 12 0 000-24H12a12 12 0 000 24zM373 180.5H12a12 12 0 000 24h361a12 12 0 000-24zM373 264.7H132.2a12 12 0 000 24H373a12 12 0 000-24z" />
+                        </svg></button>
+                    <input type="search" placeholder="Search Documentation..." />
+                </div>
+                <div class="header-right">
+                    <img src="assets/images/profile-pic.png" alt="">
+                    <a href="#" id="downarrow"><i class="fa fa-cog" aria-hidden="true"></i><span>Settings</span></a>
+                    <a href="#" id="uparrow"><i class="fa fa-times" aria-hidden="true"></i><span>Close</span></a>
+                    <!-- <i class="fa fa-arrow-circle-down" id="downarrow" aria-hidden="true"></i>
+          <i class="fa fa-arrow-circle-up" id="uparrow" aria-hidden="true"></i> -->
+                    <ul id="showul">
+                        <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i><span>Profile</span></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-comments" aria-hidden="true"></i><span>My Message</span></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-lock" aria-hidden="true"></i><span>Lock Screen</span></a>
+                        </li>
+                        <li id="logOut"><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i><span>LogOut</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main">
+                <div class="sidebar">
+                    <ul>
+                        <li><a href="dashboardleft.html"><i class="fa fa-home"></i><span>Dashboard</span></a></li>
+                        <li><a href="billing.html" class="active"><i class="fa fa-paypal"
+                                    aria-hidden="true"></i><span>Billings</span></a></li>
+                        <li><a href="datatable.html"><i class="fa fa-table"
+                                    aria-hidden="true"></i><span>Data Table</span></a></li>
+                                    <li><a href="todos.html"><i class="fa fa-list" aria-hidden="true"></i><span>Todo List</span></a></li>
+                        <li><a href="#"><i class="fa fa-th-large"></i><span>Basic Components</span></a></li>
+                        <li><a href="#"><i class="fa fa-question-circle"></i><span>Help & Support</span></a></li>
+                    </ul>
+                </div>
+                <div class="card-section">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="row">
+
+                                    <div class="col-lg-6">
+                                        <div class="atm-card">
+                                            <div class="card-chip"><img src="assets/images/atmChip-removebg-preview.png"
+                                                    alt=""></div>
+                                            <div class="card-logo"><img src="assets/images/SBI-Logo-HD-New-png.png"
+                                                    alt=""></div>
+                                            <div class="card-number">1234 5678 9012 3456</div>
+                                            <div class="card-holder">Arsalan Danish</div>
+                                            <div class="expiry-date">12/24</div>
+                                            <div class="card-visa">
+                                                <img src="assets/images/visa.webp" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6">
+                                        <div class="atmSalarySection">
+                                            <div class="atmSalarySection-left">
+                                                <div class="salary-icon">
+                                                    <i class="fa fa-university" aria-hidden="true"></i>
+                                                </div>
+                                                <p>Salary</p>
+                                                <span>Belong Interactive</span>
+                                                <h5></h5>
+                                                <h6>+$2000</h6>
+                                            </div>
+                                            <div class="atmSalarySection-right">
+                                                <div class="salary-icon">
+                                                    <i class="fa fa-cc-paypal" aria-hidden="true"></i>
+                                                </div>
+                                                <p>Paypal</p>
+                                                <span>Freelance Payment</span>
+                                                <h5></h5>
+                                                <h6>$455.00</h6>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="paymentmethod">
+                                            <div class="paymentmethod-text">
+                                                <div class="paymentmethod-text-left">
+                                                    <p>Payment Method</p>
+                                                </div>
+                                                <div class="paymentmethod-text-right">
+                                                    <button>+ ADD NEW CARD</button>
+                                                </div>
+                                            </div>
+                                            <div class="paymentmethod-content">
+                                                <div class="paymentmethod-content-left">
+                                                    <img src="assets/images/mastercard.webp" alt="">
+                                                    <h6>****&nbsp;&nbsp;&nbsp;****&nbsp;&nbsp;&nbsp;****&nbsp;&nbsp;&nbsp;7852
+                                                    </h6>
+                                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="paymentmethod-content-right">
+                                                    <img src="assets/images/visa.webp" alt="">
+                                                    <h6>****&nbsp;&nbsp;&nbsp;****&nbsp;&nbsp;&nbsp;****&nbsp;&nbsp;&nbsp;7852
+                                                    </h6>
+                                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="invoices-section">
+                                    <div class="invoices-section-content">
+                                        <div class="invoices-section-content-left">
+                                            <p>Invoices</p>
+                                        </div>
+                                        <div class="invoices-section-content-right">
+                                            <button>View All</button>
+                                        </div>
+                                    </div>
+                                    <div class="invoices-section-text">
+                                        <div class="invoices-left">
+                                            <p>March, 01, 2020</p>
+                                            <small>#MS-415646</small>
+                                        </div>
+                                        <div class="invoices-right">
+                                            <p>$180</p>
+                                            <button><i class="fa fa-file-pdf-o" aria-hidden="true"></i>PDF</button>
+                                        </div>
+                                    </div>
+                                    <div class="invoices-section-text">
+                                        <div class="invoices-left">
+                                            <p>February, 10, 2021</p>
+                                            <small>#RV-126749</small>
+                                        </div>
+                                        <div class="invoices-right">
+                                            <p>$250</p>
+                                            <button><i class="fa fa-file-pdf-o" aria-hidden="true"></i>PDF</button>
+                                        </div>
+                                    </div>
+                                    <div class="invoices-section-text">
+                                        <div class="invoices-left">
+                                            <p>April, 05, 2020</p>
+                                            <small>#FB-212562</small>
+                                        </div>
+                                        <div class="invoices-right">
+                                            <p>$560</p>
+                                            <button><i class="fa fa-file-pdf-o" aria-hidden="true"></i>PDF</button>
+                                        </div>
+                                    </div>
+                                    <div class="invoices-section-text">
+                                        <div class="invoices-left">
+                                            <p>June, 25, 2019</p>
+                                            <small>#QW-103578</small>
+                                        </div>
+                                        <div class="invoices-right">
+                                            <p>$120</p>
+                                            <button><i class="fa fa-file-pdf-o" aria-hidden="true"></i>PDF</button>
+                                        </div>
+                                    </div>
+                                    <div class="invoices-section-text">
+                                        <div class="invoices-left">
+                                            <p>March, 01, 2019</p>
+                                            <small>#AR-803481</small>
+                                        </div>
+                                        <div class="invoices-right">
+                                            <p>$300</p>
+                                            <button><i class="fa fa-file-pdf-o" aria-hidden="true"></i>PDF</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="billing-information">
+                                    <div class="billing-information-heading">
+                                        <h4>Billing Information</h4>
+                                    </div>
+                                    <div class="billing-information-content">
+                                        <div class="billing-information-content-left">
+                                            <h6>Oliver Liam</h6>
+                                            <p>Company Name:<span>Viking Burrito</span></p>
+                                            <p>Email Address:<span>oliver@burrito.com</span></p>
+                                            <p>VAT Numbe:<span>FRB1235476</span></p>
+                                        </div>
+                                        <div class="billing-information-content-right">
+                                            <span class="billing-information-delete"><i class="fa fa-trash"
+                                                    aria-hidden="true"></i>Delete</span>
+                                            <span><i class="fa fa-pencil"></i>Edit</span>
+                                        </div>
+                                    </div>
+                                    <div class="billing-information-content">
+                                        <div class="billing-information-content-left">
+                                            <h6>Lucas Harper</h6>
+                                            <p>Company Name:<span>Stone Tech Zone</span></p>
+                                            <p>Email Address:<span>lucas@stone-tech.com</span></p>
+                                            <p>VAT Numbe:<span>FRB1235476</span></p>
+                                        </div>
+                                        <div class="billing-information-content-right">
+                                            <span class="billing-information-delete"><i class="fa fa-trash"
+                                                    aria-hidden="true"></i>Delete</span>
+                                            <span><i class="fa fa-pencil"></i>Edit</span>
+                                        </div>
+                                    </div>
+                                    <div class="billing-information-content">
+                                        <div class="billing-information-content-left">
+                                            <h6>Ethan James</h6>
+                                            <p>Company Name:<span>Fiber Notion</span></p>
+                                            <p>Email Address:<span>ethan@fiber.com</span></p>
+                                            <p>VAT Numbe:<span>FRB1235476</span></p>
+                                        </div>
+                                        <div class="billing-information-content-right">
+                                            <span class="billing-information-delete"><i class="fa fa-trash"
+                                                    aria-hidden="true"></i>Delete</span>
+                                            <span><i class="fa fa-pencil"></i>Edit</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="your-transaction">
+                                    <div class="your-transaction-heading-section">
+                                        <div class="your-transaction-heading-section-left">
+                                            <h3>Your Transaction's</h3>
+                                        </div>
+                                        <div class="your-transaction-heading-section-right">
+                                            <span><i class="fa fa-calendar" aria-hidden="true"></i>23 - 30 March
+                                                2020</span>
+                                        </div>
+                                    </div>
+                                    <div class="your-transaction-newset">
+                                        <h3>Newset</h3>
+                                        <div class="your-transaction-newset-content">
+                                            <div class="your-transaction-newset-content-left">
+                                                <i class="fa fa-chevron-circle-down" aria-hidden="true"
+                                                    id="netflixColor"></i>
+                                                <div class="your-transaction-newset-content-left-text">
+                                                    <p>Netflix</p>
+                                                    <small>27 March 2020, at 12:30 PM</small>
+                                                </div>
+                                            </div>
+                                            <div class="your-transaction-newset-content-right">
+                                                <strong id="netflixamount">- $ 2,500</strong>
+                                            </div>
+                                        </div>
+                                        <div class="your-transaction-newset-content">
+                                            <div class="your-transaction-newset-content-left">
+                                                <i class="fa fa-chevron-circle-up" aria-hidden="true"></i>
+                                                <div class="your-transaction-newset-content-left-text">
+                                                    <p>Apple</p>
+                                                    <small>27 March 2020, at 04:30 AM</small>
+                                                </div>
+                                            </div>
+                                            <div class="your-transaction-newset-content-right">
+                                                <strong>+ $ 2,000</strong>
+                                            </div>
+                                        </div>
+                                        <h3>Yesterday</h3>
+                                        <div class="your-transaction-newset-content">
+                                            <div class="your-transaction-newset-content-left">
+                                                <i class="fa fa-chevron-circle-up" aria-hidden="true"></i>
+                                                <div class="your-transaction-newset-content-left-text">
+                                                    <p>Stripe</p>
+                                                    <small>26 March 2020, at 13:45 PM</small>
+                                                </div>
+                                            </div>
+                                            <div class="your-transaction-newset-content-right">
+                                                <strong>+ $ 750</strong>
+                                            </div>
+                                        </div>
+                                        <div class="your-transaction-newset-content">
+                                            <div class="your-transaction-newset-content-left">
+                                                <i class="fa fa-chevron-circle-up" aria-hidden="true"></i>
+                                                <div class="your-transaction-newset-content-left-text">
+                                                    <p>HubSpot</p>
+                                                    <small>26 March 2020, at 12:30 PM</small>
+                                                </div>
+                                            </div>
+                                            <div class="your-transaction-newset-content-right">
+                                                <strong>+ $ 1,000</strong>
+                                            </div>
+                                        </div>
+                                        <div class="your-transaction-newset-content">
+                                            <div class="your-transaction-newset-content-left">
+                                                <i class="fa fa-chevron-circle-up" aria-hidden="true"></i>
+                                                <div class="your-transaction-newset-content-left-text">
+                                                    <p>Creative Tim</p>
+                                                    <small>26 March 2020, at 08:30 AM</small>
+                                                </div>
+                                            </div>
+                                            <div class="your-transaction-newset-content-right">
+                                                <strong>+ $ 2,500</strong>
+                                            </div>
+                                        </div>
+                                        <div class="your-transaction-newset-content">
+                                            <div class="your-transaction-newset-content-left">
+                                                <i class="fa fa-exclamation-circle" aria-hidden="true"
+                                                    id="webflowpending"></i>
+                                                <div class="your-transaction-newset-content-left-text">
+                                                    <p>Webflow</p>
+                                                    <small>26 March 2020, at 05:00 AM</small>
+                                                </div>
+                                            </div>
+                                            <div class="your-transaction-newset-content-right">
+                                                <strong id="webflowpending">Pending</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/billing.js"></script>
+    <!-- <script src="assets/js/dashboard.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
